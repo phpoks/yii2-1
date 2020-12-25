@@ -963,10 +963,10 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
      * }
      * ```
      *
-     * @param bool $insert whether this method called while inserting a record.
-     * If `false`, it means the method is called while updating a record.
-     * @return bool whether the insertion or updating should continue.
-     * If `false`, the insertion or updating will be cancelled.
+     * @param bool $insert是否在插入记录时调用此方法。
+     * 如果为“false”，则表示在更新记录时调用了该方法。
+     * @return bool是否应该继续插入或更新。
+     * 如果为“false”，则将取消插入或更新。
      */
     public function beforeSave($insert)
     {
